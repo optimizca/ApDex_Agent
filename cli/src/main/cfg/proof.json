@@ -1,0 +1,224 @@
+[
+  {
+    "accountName": "lloyds retail",
+    "appkey": "AD-AAB-AAA-MXY",
+    "analyticsUrl": "https://analytics.api.appdynamics.com/v1/events/browserrecord/search",
+    "accountId": "LLOYDSBANKINGGROUPPLC-a0Q8000000BWuotEAD",
+    "accessToken": "e25c8683-39ce-45ca-a566-b913747c48e1",
+    "pages": [
+      {
+        "pagenames": [
+          "a/account_details",
+          "a/account_overview_personal",
+          "logon.login.jsp",
+          "a/logon/entermemorableinformation.jsp",
+          "unauth/pages/loggedoff.jsp",
+          "a/make_payment",
+          "a/logon/interstitialpage.jsp",
+          "a/makepayement/makepaymentconfirmation.jsp",
+          "a/make_transfer",
+          "a/makepayment/makepaymentsuccessful.jsp",
+          "a/maketransfer/maketransferconfirmation.jsp",
+          "a/maketransfer/maketransfersuccessful.jsp",
+          "a/makepayment/fasterpaymentinprogress.jsp",
+          "a/logoff/timedlogoff.jsp",
+          "a/set_up_new_payee_for_payment",
+          "a/logon/reentermemorableinformation.jsp",
+          "a/sr_hub",
+          "a/mobile/account_details",
+          "a/mobile/account_overview",
+          "a/useradmin/mobile/logon/entermemorableinformation.jsp",
+          "unauth/pages/mobiledefault/loggedoffmobile.jsp",
+          "a/mobile/make_transfer",
+          "a/payments/mobile/maketransfer/maketransfersuccessful.jsp",
+          "a/mobile/make_payment",
+          "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
+          "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
+          "a/payments/mobile/makepayment/makepaymentsuccessful.jsp",
+          "a/useradmin/mobile/logonmobileinterstitialpage.jsp"
+        ],
+        "includeAll" : true,
+        "thresholdSlow": 2000,
+        "thresholdVerySlow": 8000,
+        "executions": [
+          {
+            "name": "5min",
+            "cron": "0 */5 * ? * *",
+            "startTime": "now-5m",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "hourly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1h",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "daily",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1d",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "weekly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1w",
+            "endTime": "now",
+            "minHits": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "accountName": "Halifax Retail",
+    "appkey": "AD-AAB-AAA-MYH",
+    "analyticsUrl": "https://analytics.api.appdynamics.com/v1/events/browserrecord/search",
+    "accountId": "LLOYDSBANKINGGROUPPLC-a0Q8000000BWuotEAD",
+    "accessToken": "e25c8683-39ce-45ca-a566-b913747c48e1",
+    "pages": [
+      {
+        "pagenames": [
+          "a/account_details",
+          "a/account_overview_personal",
+          "logon.login.jsp",
+          "a/logon/entermemorableinformation.jsp",
+          "unauth/pages/loggedoff.jsp",
+          "a/make_payment",
+          "a/logon/interstitialpage.jsp",
+          "a/makepayement/makepaymentconfirmation.jsp",
+          "a/make_transfer",
+          "a/makepayment/makepaymentsuccessful.jsp",
+          "a/maketransfer/maketransferconfirmation.jsp",
+          "a/maketransfer/maketransfersuccessful.jsp",
+          "a/makepayment/fasterpaymentinprogress.jsp",
+          "a/logoff/timedlogoff.jsp",
+          "a/set_up_new_payee_for_payment",
+          "a/logon/reentermemorableinformation.jsp",
+          "a/sr_hub",
+          "a/mobile/account_details",
+          "a/mobile/account_overview",
+          "a/useradmin/mobile/logon/entermemorableinformation.jsp",
+          "unauth/pages/mobiledefault/loggedoffmobile.jsp",
+          "a/mobile/make_transfer",
+          "a/payments/mobile/maketransfer/maketransfersuccessful.jsp",
+          "a/mobile/make_payment",
+          "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
+          "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
+          "a/payments/mobile/makepayment/makepaymentsuccessful.jsp",
+          "a/useradmin/mobile/logonmobileinterstitialpage.jsp"
+        ],
+        "includeAll" : true,
+        "thresholdSlow": 2000,
+        "thresholdVerySlow": 8000,
+        "executions": [
+          {
+            "name": "5min",
+            "cron": "0 */5 * ? * *",
+            "startTime": "now-5m",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "hourly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1h",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "daily",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1d",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "weekly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1w",
+            "endTime": "now",
+            "minHits": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "accountName": "Scotland Retail",
+    "appkey": "AD-AAB-AAA-MXX",
+    "analyticsUrl": "https://analytics.api.appdynamics.com/v1/events/browserrecord/search",
+    "accountId": "LLOYDSBANKINGGROUPPLC-a0Q8000000BWuotEAD",
+    "accessToken": "e25c8683-39ce-45ca-a566-b913747c48e1",
+    "pages": [
+      {
+        "pagenames": [
+          "a/account_details",
+          "a/account_overview_personal",
+          "logon.login.jsp",
+          "a/logon/entermemorableinformation.jsp",
+          "unauth/pages/loggedoff.jsp",
+          "a/make_payment",
+          "a/logon/interstitialpage.jsp",
+          "a/makepayement/makepaymentconfirmation.jsp",
+          "a/make_transfer",
+          "a/makepayment/makepaymentsuccessful.jsp",
+          "a/maketransfer/maketransferconfirmation.jsp",
+          "a/maketransfer/maketransfersuccessful.jsp",
+          "a/makepayment/fasterpaymentinprogress.jsp",
+          "a/logoff/timedlogoff.jsp",
+          "a/set_up_new_payee_for_payment",
+          "a/logon/reentermemorableinformation.jsp",
+          "a/sr_hub",
+          "a/mobile/account_details",
+          "a/mobile/account_overview",
+          "a/useradmin/mobile/logon/entermemorableinformation.jsp",
+          "unauth/pages/mobiledefault/loggedoffmobile.jsp",
+          "a/mobile/make_transfer",
+          "a/payments/mobile/maketransfer/maketransfersuccessful.jsp",
+          "a/mobile/make_payment",
+          "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
+          "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
+          "a/payments/mobile/makepayment/makepaymentsuccessful.jsp",
+          "a/useradmin/mobile/logonmobileinterstitialpage.jsp"
+        ],
+        "includeAll" : true,
+        "thresholdSlow": 2000,
+        "thresholdVerySlow": 8000,
+        "executions": [
+          {
+            "name": "5min",
+            "cron": "0 */5 * ? * *",
+            "startTime": "now-5m",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "hourly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1h",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "daily",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1d",
+            "endTime": "now",
+            "minHits": 100
+          },
+          {
+            "name": "weekly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1w",
+            "endTime": "now",
+            "minHits": 100
+          }
+        ]
+      }
+    ]
+  }
+]

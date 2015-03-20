@@ -1,0 +1,6 @@
+{
+    "code": "Missing.Body",
+    "developerMessage": null,
+    "message": "Body must not be null or empty.",
+    "statusCode": 400
+}
