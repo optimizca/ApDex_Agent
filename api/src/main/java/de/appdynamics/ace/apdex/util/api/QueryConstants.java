@@ -261,8 +261,12 @@ public class QueryConstants {
             "        \"bool\" : {\n" +
             "          \"must\" : [ {\n" +
             "            \"match_all\" : { }\n" +
-            "          },\n" +
-            "\n" +
+            "          }," +
+            "           {\n" +
+            "                \"term\" : {\n" +
+            "                    \"pagetype\":\"BASE_PAGE\"\n" +
+            "                }    \n" +
+            "            }," +
             "          {\n" +
             "            \"range\" : {\n" +
             "              \"eventTimestamp\" : {\n" +
