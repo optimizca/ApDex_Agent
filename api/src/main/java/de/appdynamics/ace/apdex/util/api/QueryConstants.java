@@ -45,7 +45,8 @@ public class QueryConstants {
             "  },\n" +
             "    \"aggs\" : {\n" +
             "        \"page\" : {\n" +
-            "            \"terms\" : {\n" +
+            "            \"terms\" : { " +
+            "                \"size\":0,\n" +
             "                \"field\" : \"pagename\"\n" +
             "                \n" +
             "            },\n" +
@@ -165,7 +166,8 @@ public class QueryConstants {
             "  },\n" +
             "    \"aggs\" : {\n" +
             "        \"page\" : {\n" +
-            "            \"terms\" : {\n" +
+            "            \"terms\" : {" +
+            "                \"size\":0,\n" +
             "                \"field\" : \"pagename\"\n" +
             "                \n" +
             "            },\n" +
@@ -230,6 +232,7 @@ public class QueryConstants {
             "    \"aggs\" : {\n" +
             "        \"page\" : {\n" +
             "            \"terms\" : {\n" +
+            "                               \"size\":0," +
             "                \"field\" : \"pagename\"\n" +
             "                \n" +
             "            },\n" +
