@@ -10,12 +10,12 @@
         "pagenames": [
           "a/account_details",
           "a/account_overview_personal",
-          "logon.login.jsp",
+          "logon/login.jsp",
           "a/logon/entermemorableinformation.jsp",
           "unauth/pages/loggedoff.jsp",
           "a/make_payment",
           "a/logon/interstitialpage.jsp",
-          "a/makepayement/makepaymentconfirmation.jsp",
+          "a/makepayment/makepaymentconfirmation.jsp",
           "a/make_transfer",
           "a/makepayment/makepaymentsuccessful.jsp",
           "a/maketransfer/maketransferconfirmation.jsp",
@@ -34,8 +34,8 @@
           "a/mobile/make_payment",
           "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
           "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
-          "a/payments/mobile/makepayment/makepaymentsuccessful.jsp",
-          "a/useradmin/mobile/logonmobileinterstitialpage.jsp"
+          "a/payments/mobile/makepayment/paymentsuccessful.jsp",
+          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
         "includeAll" : true,
         "thresholdSlow": 2000,
@@ -84,12 +84,12 @@
         "pagenames": [
           "a/account_details",
           "a/account_overview_personal",
-          "logon.login.jsp",
+          "logon/login.jsp",
           "a/logon/entermemorableinformation.jsp",
           "unauth/pages/loggedoff.jsp",
           "a/make_payment",
           "a/logon/interstitialpage.jsp",
-          "a/makepayement/makepaymentconfirmation.jsp",
+          "a/makepayment/makepaymentconfirmation.jsp",
           "a/make_transfer",
           "a/makepayment/makepaymentsuccessful.jsp",
           "a/maketransfer/maketransferconfirmation.jsp",
@@ -108,8 +108,8 @@
           "a/mobile/make_payment",
           "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
           "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
-          "a/payments/mobile/makepayment/makepaymentsuccessful.jsp",
-          "a/useradmin/mobile/logonmobileinterstitialpage.jsp"
+          "a/payments/mobile/makepayment/paymentsuccessful.jsp",
+          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
         "includeAll" : true,
         "thresholdSlow": 2000,
@@ -158,12 +158,12 @@
         "pagenames": [
           "a/account_details",
           "a/account_overview_personal",
-          "logon.login.jsp",
+          "logon/login.jsp",
           "a/logon/entermemorableinformation.jsp",
           "unauth/pages/loggedoff.jsp",
           "a/make_payment",
           "a/logon/interstitialpage.jsp",
-          "a/makepayement/makepaymentconfirmation.jsp",
+          "a/makepayment/makepaymentconfirmation.jsp",
           "a/make_transfer",
           "a/makepayment/makepaymentsuccessful.jsp",
           "a/maketransfer/maketransferconfirmation.jsp",
@@ -182,8 +182,8 @@
           "a/mobile/make_payment",
           "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
           "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
-          "a/payments/mobile/makepayment/makepaymentsuccessful.jsp",
-          "a/useradmin/mobile/logonmobileinterstitialpage.jsp"
+          "a/payments/mobile/makepayment/paymentsuccessful.jsp",
+          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
         "includeAll" : true,
         "thresholdSlow": 2000,
