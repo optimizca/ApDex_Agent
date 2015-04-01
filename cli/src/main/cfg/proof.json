@@ -10,6 +10,7 @@
         "pagenames": [
           "a/account_details",
           "a/account_overview_personal",
+          "a/account_overview_business",
           "logon/login.jsp",
           "a/logon/entermemorableinformation.jsp",
           "unauth/pages/loggedoff.jsp",
@@ -37,7 +38,7 @@
           "a/payments/mobile/makepayment/paymentsuccessful.jsp",
           "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
-        "includeAll" : true,
+        "includeAll": true,
         "thresholdSlow": 2000,
         "thresholdVerySlow": 8000,
         "executions": [
@@ -84,6 +85,7 @@
         "pagenames": [
           "a/account_details",
           "a/account_overview_personal",
+          "a/account_overview_business",
           "logon/login.jsp",
           "a/logon/entermemorableinformation.jsp",
           "unauth/pages/loggedoff.jsp",
@@ -111,7 +113,7 @@
           "a/payments/mobile/makepayment/paymentsuccessful.jsp",
           "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
-        "includeAll" : true,
+        "includeAll": true,
         "thresholdSlow": 2000,
         "thresholdVerySlow": 8000,
         "executions": [
@@ -158,6 +160,7 @@
         "pagenames": [
           "a/account_details",
           "a/account_overview_personal",
+          "a/account_overview_business",
           "logon/login.jsp",
           "a/logon/entermemorableinformation.jsp",
           "unauth/pages/loggedoff.jsp",
@@ -185,7 +188,7 @@
           "a/payments/mobile/makepayment/paymentsuccessful.jsp",
           "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
-        "includeAll" : true,
+        "includeAll": true,
         "thresholdSlow": 2000,
         "thresholdVerySlow": 8000,
         "executions": [
@@ -230,36 +233,26 @@
     "pages": [
       {
         "pagenames": [
+          "a/account_overview_business",
           "a/account_details",
-          "a/account_overview_personal",
+          "a/makepayment/makemultiplepayment.jsp",
           "logon/login.jsp",
-          "a/logon/entermemorableinformation.jsp",
+          "a/logon/authenticationinformation.jsp",
           "unauth/pages/loggedoff.jsp",
-          "a/make_payment",
-          "a/logon/interstitialpage.jsp",
           "a/makepayment/makepaymentconfirmation.jsp",
-          "a/make_transfer",
           "a/makepayment/makepaymentsuccessful.jsp",
-          "a/maketransfer/maketransferconfirmation.jsp",
-          "a/maketransfer/maketransfersuccessful.jsp",
           "a/makepayment/fasterpaymentinprogress.jsp",
-          "a/logoff/timedlogoff.jsp",
-          "a/set_up_new_payee_for_payment",
-          "a/logon/reentermemorableinformation.jsp",
-          "a/sr_hub",
-          "a/mobile/account_details",
-          "a/mobile/account_overview",
-          "a/useradmin/mobile/logon/entermemorableinformation.jsp",
-          "unauth/pages/mobiledefault/loggedoffmobile.jsp",
-          "a/mobile/make_transfer",
-          "a/payments/mobile/maketransfer/maketransfersuccessful.jsp",
-          "a/mobile/make_payment",
-          "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
-          "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
-          "a/payments/mobile/makepayment/paymentsuccessful.jsp",
-          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
+          "a/viewproductdetails/printfriendlystatement.jsp",
+          "a/set_up_new_payee",
+          "a/logon/enteronetimepasswordcard.jsp",
+          "a/logon/capturememorableinformation.jsp",
+          "a/view_business_overview",
+          "a/createnewbeneficiary/confirmpayeedetails.jsp",
+          "a/make_transfer",
+          "a/createnewbeneficiary/payeesetupsuccessfully.jsp",
+          "a/maketransfer/maketransfersuccessful.jsp"
         ],
-        "includeAll" : true,
+        "includeAll": true,
         "thresholdSlow": 2000,
         "thresholdVerySlow": 8000,
         "executions": [
@@ -304,36 +297,26 @@
     "pages": [
       {
         "pagenames": [
+          "a/account_overview_business",
           "a/account_details",
-          "a/account_overview_personal",
+          "a/makepayment/makemultiplepayment.jsp",
           "logon/login.jsp",
-          "a/logon/entermemorableinformation.jsp",
+          "a/logon/authenticationinformation.jsp",
           "unauth/pages/loggedoff.jsp",
-          "a/make_payment",
-          "a/logon/interstitialpage.jsp",
           "a/makepayment/makepaymentconfirmation.jsp",
-          "a/make_transfer",
           "a/makepayment/makepaymentsuccessful.jsp",
-          "a/maketransfer/maketransferconfirmation.jsp",
-          "a/maketransfer/maketransfersuccessful.jsp",
           "a/makepayment/fasterpaymentinprogress.jsp",
-          "a/logoff/timedlogoff.jsp",
-          "a/set_up_new_payee_for_payment",
-          "a/logon/reentermemorableinformation.jsp",
-          "a/sr_hub",
-          "a/mobile/account_details",
-          "a/mobile/account_overview",
-          "a/useradmin/mobile/logon/entermemorableinformation.jsp",
-          "unauth/pages/mobiledefault/loggedoffmobile.jsp",
-          "a/mobile/make_transfer",
-          "a/payments/mobile/maketransfer/maketransfersuccessful.jsp",
-          "a/mobile/make_payment",
-          "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
-          "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
-          "a/payments/mobile/makepayment/paymentsuccessful.jsp",
-          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
+          "a/viewproductdetails/printfriendlystatement.jsp",
+          "a/set_up_new_payee",
+          "a/logon/enteronetimepasswordcard.jsp",
+          "a/logon/capturememorableinformation.jsp",
+          "a/view_business_overview",
+          "a/createnewbeneficiary/confirmpayeedetails.jsp",
+          "a/make_transfer",
+          "a/createnewbeneficiary/payeesetupsuccessfully.jsp",
+          "a/maketransfer/maketransfersuccessful.jsp"
         ],
-        "includeAll" : true,
+        "includeAll": true,
         "thresholdSlow": 2000,
         "thresholdVerySlow": 8000,
         "executions": [
@@ -378,36 +361,26 @@
     "pages": [
       {
         "pagenames": [
+          "a/account_overview_business",
           "a/account_details",
-          "a/account_overview_personal",
+          "a/makepayment/makemultiplepayment.jsp",
           "logon/login.jsp",
-          "a/logon/entermemorableinformation.jsp",
+          "a/logon/authenticationinformation.jsp",
           "unauth/pages/loggedoff.jsp",
-          "a/make_payment",
-          "a/logon/interstitialpage.jsp",
           "a/makepayment/makepaymentconfirmation.jsp",
-          "a/make_transfer",
           "a/makepayment/makepaymentsuccessful.jsp",
-          "a/maketransfer/maketransferconfirmation.jsp",
-          "a/maketransfer/maketransfersuccessful.jsp",
           "a/makepayment/fasterpaymentinprogress.jsp",
-          "a/logoff/timedlogoff.jsp",
-          "a/set_up_new_payee_for_payment",
-          "a/logon/reentermemorableinformation.jsp",
-          "a/sr_hub",
-          "a/mobile/account_details",
-          "a/mobile/account_overview",
-          "a/useradmin/mobile/logon/entermemorableinformation.jsp",
-          "unauth/pages/mobiledefault/loggedoffmobile.jsp",
-          "a/mobile/make_transfer",
-          "a/payments/mobile/maketransfer/maketransfersuccessful.jsp",
-          "a/mobile/make_payment",
-          "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
-          "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
-          "a/payments/mobile/makepayment/paymentsuccessful.jsp",
-          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
+          "a/viewproductdetails/printfriendlystatement.jsp",
+          "a/set_up_new_payee",
+          "a/logon/enteronetimepasswordcard.jsp",
+          "a/logon/capturememorableinformation.jsp",
+          "a/view_business_overview",
+          "a/createnewbeneficiary/confirmpayeedetails.jsp",
+          "a/make_transfer",
+          "a/createnewbeneficiary/payeesetupsuccessfully.jsp",
+          "a/maketransfer/maketransfersuccessful.jsp"
         ],
-        "includeAll" : true,
+        "includeAll": true,
         "thresholdSlow": 2000,
         "thresholdVerySlow": 8000,
         "executions": [
@@ -443,8 +416,4 @@
       }
     ]
   }
-
-
-
-
 ]
