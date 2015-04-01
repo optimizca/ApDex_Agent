@@ -219,7 +219,7 @@ public class QueryConstants {
             "          ,\n" +
             "          {\n" +
             "            \"range\" : {\n" +
-            "              \"metrics.enduserresponsetime\" : {\n" +
+            "              \"metrics.::METRICFIELD::\" : {\n" +
             "                \"gt\" : \"0\"" +
             "              }\n" +
             "          }\n" +
@@ -239,7 +239,7 @@ public class QueryConstants {
             "            \"aggs\" : {\n" +
             "\t           \"bands\": {\n" +
             "\"range\" : {\n" +
-            "                \"field\" : \"metrics.enduserresponsetime\",\n" +
+            "                \"field\" : \"metrics.::METRICFIELD::\",\n" +
             "                \"ranges\" : [\n" +
             "                    { \"to\" : ::B1:: },\n" +
             "                    { \"from\" : ::B1::, \"to\" : ::B2:: },\n" +
@@ -281,7 +281,7 @@ public class QueryConstants {
             "          ,\n" +
             "          {\n" +
             "            \"range\" : {\n" +
-            "              \"metrics.enduserresponsetime\" : {\n" +
+            "              \"metrics.::METRICFIELD::\" : {\n" +
             "                \"gt\" : \"0\"" +
             "              }\n" +
             "          }\n" +
@@ -294,7 +294,7 @@ public class QueryConstants {
             "    \"aggs\" : {\n" +
             "\t           \"bands\": {\n" +
             "\"range\" : {\n" +
-            "                \"field\" : \"metrics.enduserresponsetime\",\n" +
+            "                \"field\" : \"metrics.::METRICFIELD::\",\n" +
             "                \"ranges\" : [\n" +
             "                    { \"to\" : ::B1:: },\n" +
             "                    { \"from\" : ::B1::, \"to\" : ::B2:: },\n" +

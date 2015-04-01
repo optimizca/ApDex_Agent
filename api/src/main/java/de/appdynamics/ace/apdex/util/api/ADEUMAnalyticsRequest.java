@@ -209,7 +209,7 @@ public class ADEUMAnalyticsRequest {
     }
 
 
-    public BucketBandsResult queryPagesWithinApp(String[] pagenames, String appKey,String end, String start,long lowerBand, long upperBand) {
+    public BucketBandsResult queryPagesWithinApp(String[] pagenames, String appKey, String end, String start, long lowerBand, long upperBand, String metricField) {
         if (pagenames == null || pagenames.length == 0) return new BucketBandsResult();
 
         HttpPost post = new HttpPost(getUrl());
@@ -223,6 +223,7 @@ public class ADEUMAnalyticsRequest {
         query = applyValue(query,"B2",""+upperBand);
         query = applyValue(query,"PAGE",renderArray(pagenames));
         query = applyValue(query,"APP",appKey);
+        query = applyValue(query,"METRICFIELD",metricField);
 
 
 
@@ -291,7 +292,7 @@ public class ADEUMAnalyticsRequest {
         return _proxy;
     }
 
-    public BucketBandsResult queryAllPagesCombined( String appkey, String endTime, String startTime, long thresholdSlow, long thresholdVerySlow) {
+    public BucketBandsResult queryAllPagesCombined(String appkey, String endTime, String startTime, long thresholdSlow, long thresholdVerySlow, String metricField) {
         HttpPost post = new HttpPost(getUrl());
 
         BucketBandsResult br = null;
@@ -301,6 +302,8 @@ public class ADEUMAnalyticsRequest {
         query = applyValue(query,"TO","\""+endTime+"\"");
         query = applyValue(query,"B1",""+thresholdSlow);
         query = applyValue(query,"B2",""+thresholdVerySlow);
+        query = applyValue(query,"METRICFIELD",metricField);
+
 
 
 

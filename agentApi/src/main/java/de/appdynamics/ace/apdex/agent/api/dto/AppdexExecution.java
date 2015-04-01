@@ -45,6 +45,9 @@ public class AppdexExecution {
     String startTime="now-5m",endTime="now";
 
     @JsonProperty
+    private String metricField ="enduserresponsetime";
+
+    @JsonProperty
     long minHits = 0;
 
     public AppdexExecution() {
@@ -79,5 +82,13 @@ public class AppdexExecution {
 
     public void setLastExecution(Date lastExecution) {
         _lastExecution = lastExecution;
+    }
+
+    public String getMetricField() {
+        return metricField;
+    }
+
+    public void setMetricField(String metricField) {
+        this.metricField = metricField;
     }
 }

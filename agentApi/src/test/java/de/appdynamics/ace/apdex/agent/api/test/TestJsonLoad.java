@@ -56,11 +56,14 @@ public class TestJsonLoad {
     @Test
     public void testAPI() throws IOException {
         Config c = createJsonConfig();
-        API.runApdex(c,true);
+        Results r = API.runApdex(c, true);
 
         System.out.println("--");
         //API.runApdex(c, true);
 
+        for (ResultLine l : r.getLines()) {
+            System.out.println(l.getPagename()+"."+l.getName()+"  : "+l.getAppdexValue());
+        }
         System.out.println(toJsonString(new Config[]{c}));
 
 

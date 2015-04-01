@@ -60,7 +60,7 @@ public class API {
 
     private static void executeAppdexAllPagesRequest(Config config, ADEUMAnalyticsRequest adRequest, Results results, PageApdex pageConfig, AppdexExecution executionConfig) throws AppdexException {
         BucketBandsResult result = adRequest.queryAllPagesCombined(config.getAppkey(), executionConfig.getEndTime(), executionConfig.getStartTime(),
-                pageConfig.getThresholdSlow(), pageConfig.getThresholdVerySlow());
+                pageConfig.getThresholdSlow(), pageConfig.getThresholdVerySlow(),executionConfig.getMetricField());
 
         for (PageDataDO p : result.getPages()) {
 
@@ -76,7 +76,7 @@ public class API {
 
     private static void executeAppdexRequestForPagenames(Config c, ADEUMAnalyticsRequest adRequest, Results r, PageApdex pageConfig, AppdexExecution execution) throws AppdexException {
         BucketBandsResult result = adRequest.queryPagesWithinApp(pageConfig.getPagenames(),c.getAppkey(), execution.getEndTime(), execution.getStartTime(),
-                pageConfig.getThresholdSlow(), pageConfig.getThresholdVerySlow());
+                pageConfig.getThresholdSlow(), pageConfig.getThresholdVerySlow(),execution.getMetricField());
 
         for (PageDataDO p : result.getPages()) {
 
