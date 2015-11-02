@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -12,6 +13,7 @@ import java.util.Collections;
  */
 public class BucketBandsResult extends BucketResult {
     private ArrayList<PageDataDO> _pages = new ArrayList<PageDataDO>();
+    private String _errorMessage;
 
     public BucketBandsResult(JSONObject json) {
         super(json);
@@ -114,4 +116,11 @@ public class BucketBandsResult extends BucketResult {
     }
 
 
+    public void setErrorMessage(String errorMessage) {
+        _errorMessage = errorMessage;
+    }
+
+    public String getErrorMessage() {
+        return _errorMessage;
+    }
 }

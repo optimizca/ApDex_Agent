@@ -1,5 +1,6 @@
 package de.appdynamics.ace.apdex.util.api;
 
+import org.apache.http.Header;
 import org.apache.http.HttpHost;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
@@ -11,6 +12,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -18,6 +20,7 @@ import sun.misc.BASE64Encoder;
 
 import java.io.*;
 import java.net.URI;
+
 import java.util.Map;
 
 /**
@@ -25,6 +28,9 @@ import java.util.Map;
  */
 public class ADEUMAnalyticsRequest {
     private APIProxy _proxy;
+
+    private static Logger logger = Logger.getLogger(ADEUMAnalyticsRequest.class.getName());
+
 
     public String getUrl() {
         return _url;
@@ -105,11 +111,14 @@ public class ADEUMAnalyticsRequest {
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-
+            logger.error("Error Reading response :",e);
         } catch (IOException e) {
             e.printStackTrace();
+            logger.error("Error Reading response :",e);
+
         } catch (JSONException e) {
             e.printStackTrace();
+            logger.error("Error Unmarshaling response :",e);
         }
 
 
@@ -125,6 +134,8 @@ public class ADEUMAnalyticsRequest {
 
         InputStream is = executeHttpCall(post);
 
+        // Debug Query
+        logger.debug("Query :\n"+post.toString()+"\n"+"---"+"\n"+query+"\n---");
 
 
         BufferedReader streamReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
@@ -136,6 +147,16 @@ public class ADEUMAnalyticsRequest {
             responseStrBuilder.append(inputStr);
 
         String payload = responseStrBuilder.toString();
+
+        if (logger.isTraceEnabled()) {
+            String s;
+            if (payload.length() > 1000) {
+                s = payload.substring(0,1000);
+            } else {
+                s = payload;
+            }
+            logger.trace("Result :\n"+s+"\n-------");
+        }
 
         return new JSONObject(payload);
     }
@@ -153,6 +174,10 @@ public class ADEUMAnalyticsRequest {
     }
 
     private java.io.InputStream executeHttpCall( HttpRequestBase method) throws IOException {
+
+        if (logger.isTraceEnabled()) {
+            logger.trace("Execute CALL :"+method.toString());
+        }
         CloseableHttpClient httpclient = HttpClientBuilder.create().build();
 
         if (getProxy() != null) {
@@ -170,6 +195,33 @@ public class ADEUMAnalyticsRequest {
 
 
         CloseableHttpResponse result = httpclient.execute(method);
+
+        if (logger.isTraceEnabled()) {
+            logger.trace("CALL Result :"+result.getStatusLine());
+            StringBuffer b = new StringBuffer();
+            for (Header s :result.getAllHeaders()) {
+                 b.append(s.getName()+":"+s.getValue()).append("\n");
+            }
+            logger.trace("Headers :\n"+b.toString());
+
+        }
+        if (result.getStatusLine().getStatusCode()>400) {
+            logger.error("HTTP Error : "+result.getStatusLine());
+            InputStream is = result.getEntity().getContent();
+            BufferedReader streamReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+
+            StringBuilder responseStrBuilder = new StringBuilder();
+
+            String inputStr;
+            while ((inputStr = streamReader.readLine()) != null)
+                responseStrBuilder.append(inputStr);
+
+            String payload = responseStrBuilder.toString();
+            logger.error("Payload :"+payload);
+
+            throw new IOException("Http Error :"+result.getStatusLine());
+
+        }
         return result.getEntity().getContent();
     }
 
@@ -214,7 +266,7 @@ public class ADEUMAnalyticsRequest {
 
         HttpPost post = new HttpPost(getUrl());
 
-        BucketBandsResult br = null;
+        BucketBandsResult br = new BucketBandsResult();
         String query = QueryConstants.MULTIPLE_PAGE_BANDS_WITH_APP;
 
         query = applyValue(query,"FROM","\""+start+"\"");
@@ -235,11 +287,17 @@ public class ADEUMAnalyticsRequest {
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
+            br.setError(true);
+            br.setErrorMessage(e.toString());
 
         } catch (IOException e) {
             e.printStackTrace();
+            br.setError(true);
+            br.setErrorMessage(e.toString());
         } catch (JSONException e) {
             e.printStackTrace();
+            br.setError(true);
+            br.setErrorMessage(e.toString());
         }
 
 
@@ -295,7 +353,7 @@ public class ADEUMAnalyticsRequest {
     public BucketBandsResult queryAllPagesCombined(String appkey, String endTime, String startTime, long thresholdSlow, long thresholdVerySlow, String metricField) {
         HttpPost post = new HttpPost(getUrl());
 
-        BucketBandsResult br = null;
+        BucketBandsResult br = new BucketBandsResult();
         String query = QueryConstants.ALL_PAGE_BANDS_COMBINED;
 
         query = applyValue(query,"FROM","\""+startTime+"\"");
@@ -314,13 +372,18 @@ public class ADEUMAnalyticsRequest {
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
+            br.setError(true);
+            br.setErrorMessage(e.toString());
 
         } catch (IOException e) {
             e.printStackTrace();
+            br.setError(true);
+            br.setErrorMessage(e.toString());
         } catch (JSONException e) {
             e.printStackTrace();
+            br.setError(true);
+            br.setErrorMessage(e.toString());
         }
-
 
         return br;
     }

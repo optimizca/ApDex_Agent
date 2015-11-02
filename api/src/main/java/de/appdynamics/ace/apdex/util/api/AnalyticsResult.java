@@ -9,8 +9,8 @@ import org.json.JSONObject;
 public class AnalyticsResult {
     private boolean _error = false;
     private String _message;
-    private int _cost;
-    private int _proccessed;
+    private int _cost = 0;
+    private int _proccessed = 0;
     private int _shardsOK;
     private int _shardsError;
 
