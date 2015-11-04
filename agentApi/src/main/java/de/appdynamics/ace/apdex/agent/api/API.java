@@ -55,7 +55,7 @@ public class API {
                             long proposedtTime = executionConfig.getCronExpression().getNextValidTimeAfter(d).getTime();
                             long delay = now.getTime()-proposedtTime;
                             if (delay/(1000*60) > 2) {
-                                logger.warn("Execution wasn't successfull, delayed for " + delay +" minutes");
+                                logger.warn("Execution was, delayed for " + (delay/(1000*60)) +" minutes");
                             }
                         }
 
