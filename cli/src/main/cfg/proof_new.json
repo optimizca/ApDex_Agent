@@ -1,0 +1,150 @@
+[
+  {
+    "accountName": "lloyds retail",
+    "appkey": "AD-AAB-AAA-MXY",
+    "analyticsUrl": "https://analytics.api.appdynamics.com/v1/events/browserrecord/search",
+    "accountId": "LLOYDSBANKINGGROUPPLC-a0Q8000000BWuotEAD",
+    "accessToken": "e25c8683-39ce-45ca-a566-b913747c48e1",
+    "pages": [
+      {
+        "pagenames": [
+          "AOV - Redesigned Desktop",
+          "AOV - Redesigned Mobile",
+          "a/account_details_ress"
+        
+        ],
+        "includeAll": true,
+        "thresholdSlow": 2000,
+        "thresholdVerySlow": 8000,
+        "executions": [
+          {
+            "name": "5min",
+            "cron": "0 */5 * ? * *",
+            "startTime": "now-5m",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "hourly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1h",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "daily",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1d",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "weekly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1w",
+            "endTime": "now",
+            "minHits": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "accountName": "Halifax Retail",
+    "appkey": "AD-AAB-AAA-MYH",
+    "analyticsUrl": "https://analytics.api.appdynamics.com/v1/events/browserrecord/search",
+    "accountId": "LLOYDSBANKINGGROUPPLC-a0Q8000000BWuotEAD",
+    "accessToken": "e25c8683-39ce-45ca-a566-b913747c48e1",
+    "pages": [
+      {
+        "pagenames": [
+          "AOV - Redesigned Desktop",
+          "AOV - Redesigned Mobile",
+          "a/account_details_ress"
+        ],
+        "includeAll": true,
+        "thresholdSlow": 2000,
+        "thresholdVerySlow": 8000,
+        "executions": [
+          {
+            "name": "5min",
+            "cron": "0 */5 * ? * *",
+            "startTime": "now-5m",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "hourly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1h",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "daily",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1d",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "weekly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1w",
+            "endTime": "now",
+            "minHits": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "accountName": "Scotland Retail",
+    "appkey": "AD-AAB-AAA-MXX",
+    "analyticsUrl": "https://analytics.api.appdynamics.com/v1/events/browserrecord/search",
+    "accountId": "LLOYDSBANKINGGROUPPLC-a0Q8000000BWuotEAD",
+    "accessToken": "e25c8683-39ce-45ca-a566-b913747c48e1",
+    "pages": [
+      {
+        "pagenames": [
+          "AOV - Redesigned Desktop",
+          "AOV - Redesigned Mobile",
+          "a/account_details_ress"
+        ],
+        "includeAll": true,
+        "thresholdSlow": 2000,
+        "thresholdVerySlow": 8000,
+        "executions": [
+          {
+            "name": "5min",
+            "cron": "0 */5 * ? * *",
+            "startTime": "now-5m",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "hourly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1h",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "daily",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1d",
+            "endTime": "now",
+            "minHits": 1
+          },
+          {
+            "name": "weekly",
+            "cron": "0 0 * ? * *",
+            "startTime": "now-1w",
+            "endTime": "now",
+            "minHits": 1
+          }
+        ]
+      }
+    ]
+  }
+]

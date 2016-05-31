@@ -8,9 +8,6 @@
     "pages": [
       {
         "pagenames": [
-          "AOV - Redesigned Desktop",
-          "AOV - Redesigned Mobile",
-          "a/account_details_ress",
           "a/account_details",
           "a/account_overview_personal",
           "a/account_overview_business",
@@ -39,8 +36,7 @@
           "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
           "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
           "a/payments/mobile/makepayment/paymentsuccessful.jsp",
-          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp",
-          "a/mobile/account_details_ress"
+          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
         "includeAll": true,
         "thresholdSlow": 2000,
@@ -51,14 +47,14 @@
             "cron": "0 */5 * ? * *",
             "startTime": "now-5m",
             "endTime": "now",
-            "minHits": 100
+            "minHits": 0
           },
           {
             "name": "hourly",
             "cron": "0 0 * ? * *",
             "startTime": "now-1h",
             "endTime": "now",
-            "minHits": 100
+            "minHits": 0
           },
           {
             "name": "daily",
@@ -87,9 +83,6 @@
     "pages": [
       {
         "pagenames": [
-          "AOV - Redesigned Desktop",
-          "AOV - Redesigned Mobile",
-          "a/account_details_ress",
           "a/account_details",
           "a/account_overview_personal",
           "a/account_overview_business",
@@ -118,8 +111,7 @@
           "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
           "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
           "a/payments/mobile/makepayment/paymentsuccessful.jsp",
-          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp",
-          "a/mobile/account_details_ress"
+          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
         "includeAll": true,
         "thresholdSlow": 2000,
@@ -166,9 +158,6 @@
     "pages": [
       {
         "pagenames": [
-          "AOV - Redesigned Desktop",
-          "AOV - Redesigned Mobile",
-          "a/account_details_ress",
           "a/account_details",
           "a/account_overview_personal",
           "a/account_overview_business",
@@ -197,8 +186,7 @@
           "a/payments/mobile/maketransfer/maketransferconfirmation.jsp",
           "a/payments/mobile/makepayment/makepaymentconfirmation.jsp",
           "a/payments/mobile/makepayment/paymentsuccessful.jsp",
-          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp",
-          "a/mobile/account_details_ress"
+          "a/useradmin/mobile/logon/mobileinterstitialpage.jsp"
         ],
         "includeAll": true,
         "thresholdSlow": 2000,
@@ -326,9 +314,7 @@
           "a/createnewbeneficiary/confirmpayeedetails.jsp",
           "a/make_transfer",
           "a/createnewbeneficiary/payeesetupsuccessfully.jsp",
-          "a/maketransfer/maketransfersuccessful.jsp",
-          "a/account_details_ress",
-          "AOV - Redesigned Desktop"
+          "a/maketransfer/maketransfersuccessful.jsp"
         ],
         "includeAll": true,
         "thresholdSlow": 2000,
@@ -392,9 +378,7 @@
           "a/createnewbeneficiary/confirmpayeedetails.jsp",
           "a/make_transfer",
           "a/createnewbeneficiary/payeesetupsuccessfully.jsp",
-          "a/maketransfer/maketransfersuccessful.jsp",
-          "a/account_details_ress",
-          "AOV - Redesigned Desktop"
+          "a/maketransfer/maketransfersuccessful.jsp"
         ],
         "includeAll": true,
         "thresholdSlow": 2000,

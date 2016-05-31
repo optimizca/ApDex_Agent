@@ -1,0 +1,34 @@
+accountName,pagename,processedPages,name,cost,appdexValue
+"lloyds retail","APPLICATION",27244,"5min",119,0.695749522830715
+"lloyds retail","AOV - Redesigned Desktop",7,"hourly",198,0.5
+"lloyds retail","APPLICATION",457109,"hourly",167,0.6863417696873174
+"lloyds retail","AOV - Redesigned Desktop",117,"daily",976,0.452991452991453
+"lloyds retail","a/account_details_ress",14,"daily",976,0.42857142857142855
+"lloyds retail","AOV - Redesigned Mobile",6,"daily",976,0.25
+"lloyds retail","APPLICATION",8053993,"daily",595,0.715240254119913
+"lloyds retail","AOV - Redesigned Desktop",586,"weekly",2607,0.5793515358361775
+"lloyds retail","a/account_details_ress",117,"weekly",2607,0.6452991452991453
+"lloyds retail","AOV - Redesigned Mobile",7,"weekly",2607,0.35714285714285715
+"lloyds retail","APPLICATION",51380373,"weekly",2255,0.7452295062163133
+"Halifax Retail","APPLICATION",16390,"5min",306,0.6647345942647956
+"Halifax Retail","APPLICATION",340273,"hourly",162,0.6641784684650266
+"Halifax Retail","AOV - Redesigned Desktop",16,"daily",602,0.8125
+"Halifax Retail","APPLICATION",5719737,"daily",511,0.6948707606660935
+"Halifax Retail","AOV - Redesigned Desktop",19,"weekly",1659,0.7368421052631579
+"Halifax Retail","APPLICATION",38469873,"weekly",2199,0.7127167796992727
+"Scotland Retail","AOV - Redesigned Desktop",25,"5min",220,0.62
+"Scotland Retail","a/account_details_ress",23,"5min",220,0.717391304347826
+"Scotland Retail","AOV - Redesigned Mobile",3,"5min",220,0.3333333333333333
+"Scotland Retail","APPLICATION",2464,"5min",22,0.7015016233766234
+"Scotland Retail","AOV - Redesigned Desktop",502,"hourly",179,0.6663346613545816
+"Scotland Retail","a/account_details_ress",393,"hourly",179,0.7251908396946565
+"Scotland Retail","AOV - Redesigned Mobile",61,"hourly",179,0.5737704918032787
+"Scotland Retail","APPLICATION",63561,"hourly",119,0.7060461603813659
+"Scotland Retail","AOV - Redesigned Desktop",9722,"daily",488,0.6961016251800041
+"Scotland Retail","a/account_details_ress",7485,"daily",488,0.7533066132264529
+"Scotland Retail","AOV - Redesigned Mobile",765,"daily",488,0.5372549019607843
+"Scotland Retail","APPLICATION",1043895,"daily",367,0.7286978096456062
+"Scotland Retail","AOV - Redesigned Desktop",63242,"weekly",4996,0.7302267480471838
+"Scotland Retail","a/account_details_ress",47252,"weekly",4996,0.7755227291966478
+"Scotland Retail","AOV - Redesigned Mobile",827,"weekly",4996,0.562273276904474
+"Scotland Retail","APPLICATION",6916730,"weekly",8258,0.758027059029339
