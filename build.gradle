@@ -29,7 +29,7 @@ allprojects
             compileJava {
                 sourceCompatibility = 1.6
                 targetCompatibility = 1.6
-                options.bootClasspath = "/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar"
+//                options.bootClasspath = "/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar"
             }
 
         }
